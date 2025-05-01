@@ -3,8 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 import pickle as pk
-
-
 df=pd.read_csv("migraine.csv")
 df1=df.drop(["Unnamed: 0"],axis=1)
 x=df1.drop(["Type"],axis=1)
